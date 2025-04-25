@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Layout from "@/components/Layout";
-import { Brain, HeartPulse, Clock, ArrowRight, GameController } from "lucide-react";
+import { Brain, HeartPulse, Clock, ArrowRight, Gamepad2 } from "lucide-react";
 
 const Index = () => {
   return (
@@ -154,7 +154,7 @@ const Index = () => {
               </Button>
             </div>
             <div className="flex-shrink-0 w-64 h-64 flex items-center justify-center bg-white rounded-full shadow-lg">
-              <GameController className="h-24 w-24 text-gaming-primary" />
+              <Gamepad2 className="h-24 w-24 text-gaming-primary" />
             </div>
           </div>
         </div>

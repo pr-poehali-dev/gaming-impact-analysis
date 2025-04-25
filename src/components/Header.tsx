@@ -10,14 +10,14 @@ import {
   navigationMenuTriggerStyle 
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { GameController, Brain, HeartPulse, Info, Mail } from "lucide-react";
+import { Gamepad2, Brain, HeartPulse, Info, Mail } from "lucide-react";
 
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <GameController className="h-6 w-6 text-gaming-primary" />
+          <Gamepad2 className="h-6 w-6 text-gaming-primary" />
           <span className="text-xl font-bold">Игровой Баланс</span>
         </Link>
 
