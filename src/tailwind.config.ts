@@ -1,14 +1,12 @@
-import type { Config } from "tailwindcss";
-
-const config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-  ],
-  prefix: "",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+	],
   theme: {
     container: {
       center: true,
@@ -25,11 +23,12 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         gaming: {
-          primary: "#8B5CF6", // Основной фиолетовый
-          secondary: "#7E69AB", // Вторичный фиолетовый
-          light: "#D6BCFA", // Светлый фиолетовый
-          muted: "#F3E8FF", // Очень светлый фиолетовый
-          dark: "#4C1D95", // Темный фиолетовый
+          primary: "#8B5CF6", // Vivid purple
+          secondary: "#7E69AB", // Secondary purple
+          tertiary: "#6E59A5", // Tertiary purple
+          dark: "#1A1F2C", // Dark purple
+          light: "#D6BCFA", // Light purple
+          muted: "#E5DEFF" // Soft purple
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -67,12 +66,12 @@ const config = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0" },
+          from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+          to: { height: 0 },
         },
       },
       animation: {
@@ -82,6 +81,4 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
-
-export default config;
+}
